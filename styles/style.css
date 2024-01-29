@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Blinker', sans-serif;
+}
+
+body{
+    background-color: #121212;
+    width: 100%;
+    min-height: 100Vh;
+    display: flex;
+    justify-content: center;
+    color: aliceblue;
+    align-items: center;
+}
