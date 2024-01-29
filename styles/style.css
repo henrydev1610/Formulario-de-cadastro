@@ -5,6 +5,15 @@
     font-family: 'Blinker', sans-serif;
 }
 
+.square{
+    position: absolute;
+    width: 40%;
+    height: 80%;
+    left: 50%;
+    
+    border: 5px solid orange;
+}
+
 body{
     background-color: #121212;
     width: 100%;
@@ -16,11 +25,13 @@ body{
 }
 
 .container{
+
     background-color: #fafafa;
     width: 100%;
     max-width: 600px;
     border-radius: 14px;
     box-sizing: 0 3px 5px rgba(0,0,0,0.5);
+    z-index: 5;
 }
 
 .header{
@@ -30,6 +41,7 @@ body{
     color: #fafafa;
     overflow: hidden;
 }
+
 .form{
    padding: 18px;
    
@@ -76,6 +88,8 @@ body{
     cursor: pointer;
     top: 15px;
     left: 50%;
+    border-radius: 10px;
+    transition: background-color .4s;
     transform: translate(-50%, -50%);
 
     
@@ -83,6 +97,11 @@ body{
     
         
 }
+
+.form button:hover{
+    background-color: rgb(101, 84, 202);
+}
+
 .form-content.error input{
     border-color: red;
 }
