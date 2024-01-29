@@ -61,7 +61,7 @@ body{
     position: absolute;
     bottom: -8px;
     left: 0;
-    /* visibility: hidden; */
+    visibility: hidden;
 
 }
 
@@ -81,4 +81,10 @@ body{
    
     
         
+}
+.form-content.error input{
+    border-color: red;
+}
+.form-content.error a{
+    color: red;
 }
