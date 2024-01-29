@@ -7,17 +7,33 @@ const form = document.getElementById('form'),
 
 
 form.addEventListener('submit',(e)=>{
-        e.preventDefault()
-    checkInputUsername();
-    checkInputEmail();
-    checkInputPassword();
-    checkPasswordConfirm();
+    e.preventDefault()
+    checkForm();
+           
+ 
+    
 
-    alert('cadastrado com sucesso!')
+})
+
+
+username.addEventListener('blur',()=>{
+
+   checkInputUsername();
 
 
 
 })
+email.addEventListener('blur', ()=>{
+    checkInputEmail()
+})
+
+password.addEventListener('blur', ()=>{
+    checkInputPassword
+})
+ passowrdConfirm.addEventListener('blur', ()=>{
+    checkPasswordConfirm()
+ })
+
 
 function checkInputUsername(){
   const usernameValue = username.value;
@@ -71,6 +87,26 @@ function checkPasswordConfirm(){
 }
 
 
+
+function checkForm(){
+        
+    checkInputUsername();
+    checkInputEmail();
+    checkInputPassword();
+    checkPasswordConfirm();
+
+    const formItems = form.querySelectorAll('.form-content')
+    const isValid = [...formItems].every((item)=>{
+        return item.className === "form-content"
+    })
+
+    if(isValid){
+        alert('cadastrado com sucesso!')
+    }
+
+
+
+}
 
 
 
